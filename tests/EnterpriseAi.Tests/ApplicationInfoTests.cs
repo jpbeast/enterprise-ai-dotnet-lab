@@ -1,9 +1,19 @@
-﻿namespace EnterpriseAi.Console;
+﻿using EnterpriseAi.Console;
 
-public static class ApplicationInfo
+namespace EnterpriseAi.Tests;
+
+public class ApplicationInfoTests
 {
-    public static string GetWelcomeMessage()
+    [Fact]
+    public void GetWelcomeMessage_ReturnsExpectedMessage()
     {
-        return "Enterprise AI .NET Lab is ready!";
+        // Arrange
+        const string expected = "Enterprise AI .NET Lab is ready!";
+
+        // Act
+        string actual = ApplicationInfo.GetWelcomeMessage();
+
+        // Assert
+        Assert.Equal(expected, actual);
     }
 }
