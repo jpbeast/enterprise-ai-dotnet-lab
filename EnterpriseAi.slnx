@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EnterpriseAi.Console/EnterpriseAi.Console.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EnterpriseAi.Tests/EnterpriseAi.Tests.csproj" />
+  </Folder>
+</Solution>
